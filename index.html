@@ -62,7 +62,18 @@
       }
 
       
-      
+      .navbar-inner {
+	background-color: #08088A;
+	background: #2c539e; /* Old browsers */
+background: -moz-linear-gradient(top,  #2c539e 0%, #2c539e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c539e), color-stop(100%,#2c539e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #2c539e 0%,#2c539e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #2c539e 0%,#2c539e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #2c539e 0%,#2c539e 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #2c539e 0%,#2c539e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+	
+	}
 
       /* Marketing Copy and Footer */
       .copy {
@@ -89,7 +100,7 @@
 
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-inner">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar"
