@@ -8,8 +8,21 @@ app.get('/', function(request,response)
 {
 var html = fs.readFileSync(htmlfile).toString();
 response.send(html);
-app.get('/login', function(req, res){
-   res.send(fs.readFileSync('form.html').toString());
+
+app.get('/maintenancelogin', function(req, res){
+   res.send(fs.readFileSync('MaintenanceLogin.html').toString());
+});
+app.get('/operationslogin', function(req, res){
+   res.send(fs.readFileSync('OperationsLogin.html').toString());
+});
+app.get('/logisticslogin', function(req, res){
+   res.send(fs.readFileSync('LogisticsLogin.html').toString());
+});
+app.get('/crewlogin', function(req, res){
+   res.send(fs.readFileSync('CrewLogin.html').toString());
+});
+app.get('/managementlogin', function(req, res){
+   res.send(fs.readFileSync('ManagementLogin.html').toString());
 }); });
   
 var port = process.env.PORT || 8080;
