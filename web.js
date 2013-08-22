@@ -9,6 +9,10 @@ app.get('/', function(request,response)
 var html = fs.readFileSync(htmlfile).toString();
 response.send(html);
 
+app.get('/homepage', function(req, res){
+   res.send(fs.readFileSync(htmlfile).toString());
+});
+
 app.get('/maintenancelogin', function(req, res){
    res.send(fs.readFileSync('MaintenanceLogin.html').toString());
 });
@@ -23,6 +27,9 @@ app.get('/crewlogin', function(req, res){
 });
 app.get('/managementlogin', function(req, res){
    res.send(fs.readFileSync('ManagementLogin.html').toString());
+});
+app.get('/contact', function(req, res){
+   res.send(fs.readFileSync('contact.html').toString());
 }); });
   
 var port = process.env.PORT || 8080;
